@@ -6,7 +6,7 @@ Prérequis : un serveur Linux (4 vCPU / 8 Go minimum, 8 vCPU / 16 Go recommandé
 un nom de domaine dont l'enregistrement DNS A pointe vers l'adresse IP du serveur.
 
 ```bash
-git clone https://github.com/Dioumadev221/SUNUSAFEGUARD.git && cd SUNUSAFEGUARD
+git clone https://github.com/Dioumadev221/SUNUSAFEGUARD-AI.git && cd SUNUSAFEGUARD-AI
 cp .env.production.example .env        # remplir DOMAIN, CORS_ORIGINS, POSTGRES_PASSWORD, JWT_SECRET, DATA_ENCRYPTION_KEY
 docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
 ```

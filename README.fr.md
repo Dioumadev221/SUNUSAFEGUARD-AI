@@ -15,7 +15,7 @@ Conçue par **GREEN T SARL**, Sénégal
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
 ![Expo](https://img.shields.io/badge/Expo-SDK%2058-000020?logo=expo&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)
-[![CI](https://github.com/Dioumadev221/SUNUSAFEGUARD/actions/workflows/ci.yml/badge.svg)](https://github.com/Dioumadev221/SUNUSAFEGUARD/actions/workflows/ci.yml)
+[![CI](https://github.com/Dioumadev221/SUNUSAFEGUARD-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/Dioumadev221/SUNUSAFEGUARD-AI/actions/workflows/ci.yml)
 ![Version](https://img.shields.io/badge/version-1.0-2ea44f)
 
 </div>
@@ -487,8 +487,8 @@ Chacun de ces engagements est couvert par des tests automatisés (voir [Tests](#
 ### Installation locale (Windows)
 
 ```powershell
-git clone https://github.com/Dioumadev221/SUNUSAFEGUARD.git
-cd SUNUSAFEGUARD
+git clone https://github.com/Dioumadev221/SUNUSAFEGUARD-AI.git
+cd SUNUSAFEGUARD-AI
 copy .env.example .env
 .\scripts\dev.ps1
 ```
@@ -496,8 +496,8 @@ copy .env.example .env
 ### Installation locale (Linux, macOS, WSL)
 
 ```bash
-git clone https://github.com/Dioumadev221/SUNUSAFEGUARD.git
-cd SUNUSAFEGUARD
+git clone https://github.com/Dioumadev221/SUNUSAFEGUARD-AI.git
+cd SUNUSAFEGUARD-AI
 cp .env.example .env
 make install     # une seule fois
 make backend     # terminal 1 : API sur http://localhost:8000 (docs : /api/docs)
