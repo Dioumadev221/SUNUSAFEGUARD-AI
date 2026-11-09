@@ -1,3 +1,8 @@
+"""Interface commune des générateurs d'embeddings et similarité cosinus.
+
+Tout embedder (Ollama, hachage local) expose `name`, `dim` et `embed(texts)` ;
+le moteur de recherche ne dépend que de ce contrat.
+"""
 import math
 from typing import Protocol
 

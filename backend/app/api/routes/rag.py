@@ -1,3 +1,6 @@
+"""Outils de mise au point de la recherche documentaire (RAG) : bac à sable,
+évaluation sur le jeu de test et détection des questions sans réponse.
+"""
 import json
 from pathlib import Path
 

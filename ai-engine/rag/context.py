@@ -1,3 +1,5 @@
+"""Assemblage du contexte documentaire transmis au modèle de langage.
+"""
 from .retriever import ScoredChunk
 
 

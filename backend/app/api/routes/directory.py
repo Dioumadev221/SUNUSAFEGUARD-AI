@@ -1,3 +1,6 @@
+"""Annuaire des structures d'aide : consultation publique, gestion, disponibilité
+et validation des fiches par les administrateurs.
+"""
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, HTTPException

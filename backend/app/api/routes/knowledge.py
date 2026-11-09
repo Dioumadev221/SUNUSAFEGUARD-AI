@@ -1,3 +1,6 @@
+"""Base documentaire : import de fiches, circuit de validation (brouillon,
+en validation, publié) et réindexation pour la recherche.
+"""
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile

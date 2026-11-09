@@ -1,3 +1,5 @@
+"""Indicateurs d'impact anonymisés, répartition géographique et export des rapports.
+"""
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, Query

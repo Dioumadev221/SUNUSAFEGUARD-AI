@@ -1,3 +1,8 @@
+"""Dépendances FastAPI partagées : authentification par jeton JWT et contrôle des permissions.
+
+`require("permission")` s'utilise dans la signature d'une route pour la réserver
+aux rôles qui disposent de cette permission (voir `app.core.permissions`).
+"""
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from jwt import PyJWTError

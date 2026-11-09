@@ -1,3 +1,7 @@
+"""Configuration de l'application, lue depuis les variables d'environnement ou le fichier `.env`.
+
+Voir `.env.example` pour la liste commentée des paramètres.
+"""
 from functools import lru_cache
 from pathlib import Path
 

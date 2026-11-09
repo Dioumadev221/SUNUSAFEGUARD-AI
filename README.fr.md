@@ -15,6 +15,7 @@ Conçue par **GREEN T SARL**, Sénégal
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
 ![Expo](https://img.shields.io/badge/Expo-SDK%2058-000020?logo=expo&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)
+[![CI](https://github.com/Dioumadev221/SUNUSAFEGUARD/actions/workflows/ci.yml/badge.svg)](https://github.com/Dioumadev221/SUNUSAFEGUARD/actions/workflows/ci.yml)
 ![Version](https://img.shields.io/badge/version-1.0-2ea44f)
 
 </div>
@@ -675,6 +676,10 @@ make test    # tests du backend et du moteur IA, puis vérification du typage du
 make eval    # évaluation de la qualité de la recherche
 ```
 
+Chaque push et chaque pull request lancent automatiquement ces vérifications sur GitHub Actions
+([`.github/workflows/ci.yml`](.github/workflows/ci.yml)) : tests du backend et du moteur IA (pytest),
+typage et build de production du site, typage et tests de l'application mobile (Jest).
+
 | Domaine | Ce qui est vérifié |
 |---|---|
 | Moteur IA | Détection des urgences, détection de la langue, contrôle final des réponses, tentatives de manipulation |
@@ -719,6 +724,7 @@ Détails : [docs/deployment/README.md](docs/deployment/README.md).
 
 ```text
 SUNUSAFEGUARD/
+├── .github/workflows/  Intégration continue (tests à chaque push et pull request)
 ├── ai-engine/          Moteur IA : règles de sécurité, recherche, génération, wolof, voix
 ├── backend/            API FastAPI, modèles de données, migrations, tests
 ├── frontend/           Site React (pages publiques et espaces professionnels)

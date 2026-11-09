@@ -1,3 +1,5 @@
+"""Transcription vocale (Whisper exécuté localement), pour poser une question à l'oral.
+"""
 import base64
 import binascii
 

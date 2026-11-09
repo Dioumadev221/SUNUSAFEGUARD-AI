@@ -1,3 +1,8 @@
+"""Assistant conversationnel et numéros d'urgence.
+
+Les messages sont traités en mémoire et ne sont jamais enregistrés : seuls des
+indicateurs anonymes (langue, catégorie, action de sécurité, qualité) sont conservés.
+"""
 import json
 from pathlib import Path
 

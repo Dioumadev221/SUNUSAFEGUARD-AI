@@ -5,7 +5,7 @@ sont disponibles ; lexical seul sinon (mode dégradé, sans modèle). La combina
 rattrape à la fois les reformulations (sémantique) et les termes précis comme un
 numéro de loi (lexical).
 
-Le prototype calcule les similarités en Python (volume de démonstration). Pour un
+Les similarités sont calculées en Python, ce qui suffit au volume actuel. Pour un
 grand corpus : déléguer la partie sémantique à pgvector ou Qdrant.
 """
 from dataclasses import dataclass, field

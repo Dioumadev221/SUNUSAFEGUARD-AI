@@ -1,3 +1,6 @@
+"""Supervision technique : santé des services, état du moteur IA, événements de
+sécurité, journal d'audit et purge des données expirées.
+"""
 import time
 
 import psutil

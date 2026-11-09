@@ -1,3 +1,8 @@
+"""Point d'entrée de l'API SunuSafeguard.
+
+Assemble les routes, applique les en-têtes de sécurité et la limitation de débit,
+expose les métriques Prometheus et planifie la purge quotidienne des données expirées.
+"""
 import asyncio
 import logging
 

@@ -1,3 +1,6 @@
+"""Gestion des comptes professionnels : création, rôles, activation et
+réinitialisation des mots de passe.
+"""
 import secrets
 
 from fastapi import APIRouter, Depends, HTTPException

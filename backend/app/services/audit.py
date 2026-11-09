@@ -1,3 +1,5 @@
+"""Journal d'audit des actions sensibles et enregistrement des événements de sécurité.
+"""
 from sqlalchemy.orm import Session
 
 from app.models import AuditLog, SecurityEvent, User

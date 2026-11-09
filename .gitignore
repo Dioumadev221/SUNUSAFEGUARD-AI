@@ -10,3 +10,8 @@ frontend/dist/
 backups/
 .DS_Store
 *.tsbuildinfo
+
+# IDE et éditeurs
+.idea/
+.vscode/
+*.swp

@@ -1,3 +1,6 @@
+"""Primitives de sécurité : hachage des mots de passe (PBKDF2-SHA256), jetons JWT,
+règles de robustesse des mots de passe et chiffrement des champs sensibles (Fernet).
+"""
 import base64
 import hashlib
 import hmac

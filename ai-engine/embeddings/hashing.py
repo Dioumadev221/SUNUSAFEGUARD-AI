@@ -1,9 +1,9 @@
 """Embedder local déterministe (hashing trick sur mots + n-grammes de caractères).
 
-Avantages pour le prototype : aucune dépendance, aucun téléchargement de modèle,
-reproductible pour les tests. Limite : sémantique faible (pas de synonymie) —
-d'où l'expansion lexicale wolof → français et l'option Ollama
-(`EMBEDDING_PROVIDER=ollama`, modèle `nomic-embed-text`) pour la suite.
+Utilisé en mode dégradé (Ollama indisponible) et dans les tests : aucune dépendance,
+aucun téléchargement de modèle, résultats reproductibles. Limite : sémantique faible
+(pas de synonymie), compensée par l'expansion lexicale wolof → français. En production,
+`EMBEDDING_PROVIDER=auto` utilise de préférence Ollama (`paraphrase-multilingual`).
 """
 import hashlib
 import math

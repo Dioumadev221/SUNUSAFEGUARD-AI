@@ -1,6 +1,6 @@
 """Détection de langue légère français / wolof.
 
-Heuristique par marqueurs lexicaux : suffisante pour le prototype (Phase 1),
+Heuristique par marqueurs lexicaux : suffisante pour le volume actuel (version 1.0),
 à remplacer par un modèle évalué sur un jeu de tests validé par des linguistes.
 """
 import re

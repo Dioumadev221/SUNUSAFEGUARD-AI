@@ -1,3 +1,8 @@
+"""Client HTTP du modèle de langage local (Ollama).
+
+Lève `LLMUnavailable` quand le serveur ne répond pas : le pipeline bascule alors
+sur des réponses de repli construites à partir des documents sources.
+"""
 import httpx
 
 

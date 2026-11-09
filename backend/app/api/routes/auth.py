@@ -1,3 +1,6 @@
+"""Authentification : connexion, inscription, déconnexion (révocation du jeton),
+double authentification TOTP et changement de mot de passe.
+"""
 from datetime import datetime, timedelta, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, status

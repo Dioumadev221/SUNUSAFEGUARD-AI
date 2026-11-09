@@ -1,3 +1,5 @@
+"""Embeddings sémantiques calculés localement par un serveur Ollama.
+"""
 import httpx
 
 

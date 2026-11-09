@@ -15,6 +15,7 @@ Built by **GREEN T SARL**, Senegal
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
 ![Expo](https://img.shields.io/badge/Expo-SDK%2058-000020?logo=expo&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)
+[![CI](https://github.com/Dioumadev221/SUNUSAFEGUARD/actions/workflows/ci.yml/badge.svg)](https://github.com/Dioumadev221/SUNUSAFEGUARD/actions/workflows/ci.yml)
 ![Version](https://img.shields.io/badge/version-1.0-2ea44f)
 
 </div>
@@ -666,6 +667,10 @@ make test    # backend and AI engine tests, then website type checking
 make eval    # search quality evaluation
 ```
 
+Every push and pull request runs these checks automatically on GitHub Actions
+([`.github/workflows/ci.yml`](.github/workflows/ci.yml)): backend and AI engine tests (pytest),
+website type checking and production build, mobile app type checking and tests (Jest).
+
 | Area | What is verified |
 |---|---|
 | AI engine | Emergency detection, language detection, final answer check, manipulation attempts |
@@ -710,6 +715,7 @@ Details: [docs/deployment/README.md](docs/deployment/README.md).
 
 ```text
 SUNUSAFEGUARD/
+├── .github/workflows/  Continuous integration (tests on every push and pull request)
 ├── ai-engine/          AI engine: safety rules, search, generation, Wolof, speech
 ├── backend/            FastAPI API, database models, migrations, tests
 ├── frontend/           React website (public pages and dashboards)

@@ -1,3 +1,8 @@
+"""Orientations vers les structures d'aide.
+
+Une demande n'est transmise qu'avec le consentement explicite de la personne ;
+elle reçoit un code de suivi aléatoire `SSG-XXXXXXXX` non relié à son identité.
+"""
 import secrets
 from datetime import datetime, timedelta, timezone
 from statistics import median
