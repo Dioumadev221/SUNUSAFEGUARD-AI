@@ -283,16 +283,16 @@ Every message goes through the same chain of checks before an answer is shown.
 
 ```mermaid
 flowchart TD
-    IN(["Message"]) --> LANG["1. Language detection<br/>French or Wolof"]
-    LANG --> SAFE{"2. Safety check"}
+    IN(["Message"]) --> LANG["Step 1 · Language detection<br/>French or Wolof"]
+    LANG --> SAFE{"Step 2 · Safety check"}
     SAFE -->|"Emergency"| URG["Emergency message<br/>and emergency numbers first"]
     SAFE -->|"Out of scope or<br/>manipulation attempt"| FIX["Fixed safe answer"]
     SAFE -->|"Allowed"| SEARCH
-    URG --> SEARCH["3. Search in validated documents"]
+    URG --> SEARCH["Step 3 · Search in validated documents"]
     SEARCH --> FOUND{"Relevant sources?"}
     FOUND -->|"No"| NONE["Honest answer<br/>and link to the directory"]
-    FOUND -->|"Yes"| GEN["4. Answer written from the sources<br/>with references [1], [2]"]
-    GEN --> CHECK{"5. Final check"}
+    FOUND -->|"Yes"| GEN["Step 4 · Answer written from the sources<br/>with references [1], [2]"]
+    GEN --> CHECK{"Step 5 · Final check"}
     CHECK -->|"Diagnosis, false promise,<br/>trivialization"| SAFEANS["Replaced by a safe answer"]
     CHECK -->|"Compliant"| OUT
     SAFEANS --> OUT

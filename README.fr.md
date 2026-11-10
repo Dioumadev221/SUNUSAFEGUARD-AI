@@ -287,16 +287,16 @@ Chaque message passe par la même chaîne de contrôles avant qu'une réponse ne
 
 ```mermaid
 flowchart TD
-    IN(["Message"]) --> LANG["1. Détection de la langue<br/>français ou wolof"]
-    LANG --> SAFE{"2. Contrôle de sécurité"}
+    IN(["Message"]) --> LANG["Étape 1 · Détection de la langue<br/>français ou wolof"]
+    LANG --> SAFE{"Étape 2 · Contrôle de sécurité"}
     SAFE -->|"Urgence"| URG["Message d'urgence<br/>et numéros d'urgence en premier"]
     SAFE -->|"Hors périmètre ou<br/>tentative de manipulation"| FIX["Réponse sûre prédéfinie"]
     SAFE -->|"Autorisé"| SEARCH
-    URG --> SEARCH["3. Recherche dans les documents validés"]
+    URG --> SEARCH["Étape 3 · Recherche dans les documents validés"]
     SEARCH --> FOUND{"Sources pertinentes ?"}
     FOUND -->|"Non"| NONE["Réponse honnête<br/>et lien vers l'annuaire"]
-    FOUND -->|"Oui"| GEN["4. Réponse rédigée à partir des sources<br/>avec références [1], [2]"]
-    GEN --> CHECK{"5. Contrôle final"}
+    FOUND -->|"Oui"| GEN["Étape 4 · Réponse rédigée à partir des sources<br/>avec références [1], [2]"]
+    GEN --> CHECK{"Étape 5 · Contrôle final"}
     CHECK -->|"Diagnostic, fausse promesse,<br/>banalisation"| SAFEANS["Remplacée par une réponse sûre"]
     CHECK -->|"Conforme"| OUT
     SAFEANS --> OUT
